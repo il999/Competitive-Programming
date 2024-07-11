@@ -54,12 +54,6 @@ void solve() {
     cin>>n>>x;
     vector<int> a(n);
     for(int i=0;i<n;i++) cin>>a[i];
-    // decompose prime number x, basically we need the product of each segment to not be multiple of x;
-    //maximum 17 primes,
-    //each number added to a subset where its numebered by bitly by which primes it has, number, if x divides y no reason to not have in same group
-    //now we have unique groups of numbers, ng
-    vector<array<int,2> > decomp;
-    // we jsut need avoid where the knapsack dp creates x, otherwise we g, these 3 cant be in a thing together, hen submit wihtout that?
     for(int div : primes){
         int tp = x;
         int num=0;
